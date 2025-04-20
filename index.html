@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>Slide 1</section>
+        <section>Slide 2</section>
+        <section>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="width: 50%; padding: 20px;">
+                    <h2>Who Am I?</h2>
+                    <ul style="list-style-type: none;">
+                        <li>Nick Vermeylen</li>
+                        <li>Fullstack Software Engineer</li>
+                        <li>Lorem Ipsum Dolores</li>
+                    </ul>
+                </div>
+                <div style="width: 40%; text-align: center;">
+                    <img src="path/to/your-image.jpg" alt="Nick V." style="max-width: 100%; border-radius: 10px;">
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>
+                <q cite="https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is">Indeed,
+                    the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old
+                    code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier
+                    to write.</q><br>
+                <sub>― Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship</sub>
+            </p>
+        </section>
+        <section>
+            <h2>Clean Code Principles</h2>
+            <section>
+                <h3>1. Meaningful Names</h3>
+                <p>Use descriptive and unambiguous names.</p>
+                <p>Avoid abbreviations and use intention-revealing identifiers.</p>
+                <p>Classes, methods, variables—everything should tell a story.</p>
+            </section>
+            <section>
+                <h3>2. Small Functions</h3>
+                <p>Functions should be small and do one thing.</p>
+                <p>Keep the number of arguments low.</p>
+                <p>Prefer expressive names over comments.</p>
+            </section>
+            <section>
+                <h3>3. Code Structure</h3>
+                <p>Organize code for readability: proper indentation, spacing, and ordering.</p>
+                <p>Maintain consistent formatting throughout the codebase.</p>
+            </section>
+            <section>
+                <h3>4. Comments</h3>
+                <p>Comments are not a substitute for clean code.</p>
+                <p>Use comments to explain why, not what—if the code is clear, it should explain itself.</p>
+                <p>Avoid redundant or outdated comments.</p>
+            </section>
+            <section>
+                <h3>5. Objects and Data Structure</h3>
+                <p>Use objects to hide implementation and expose behavior.</p>
+                <p>Data structures should expose data but not behavior.</p>
+                <p>Understand when to use one over the other.</p>
+            </section>
+            <section>
+                <h3>6. Error Handling</h3>
+                <p>Use exceptions rather than error codes.</p>
+                <p>Keep try/catch blocks to a minimum and handle them at a high level.</p>
+            </section>
+            <section>
+                <h3>7. Boundaries</h3>
+                <p>Use tests to explore third-party code or unfamiliar APIs.</p>
+                <p>Keep external dependencies well-encapsulated.</p>
+            </section>
+            <section>
+                <h3>8. DRY Don't Repeat Yourself</h3>
+                <p>Eliminate duplicate code.</p>
+                <p>Refactor repeated logic into well-named functions or classes.</p>
+            </section>
+        </section>
+        <section>
+            <pre><code>#TODO Perhaps put in some actual code examples?</code></pre>
+        </section>
+        <section>
+                    <pre data-id="code-animation"><code class="hljs language-java" data-trim data-line-numbers>
+
+      // Sometimes I believe compiler ignores all my comments
+					</code></pre>
+        </section>
+        <section data-background="https://github.blog/wp-content/uploads/2024/02/Copilot-Enterprise-Blog-Header.png?resize=1600%2C850" data-background-opacity="0.6">
+            <h3>AI entered the chat</h3>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
+</html>
