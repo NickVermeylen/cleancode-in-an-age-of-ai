@@ -110,6 +110,91 @@
         <section data-background="https://github.blog/wp-content/uploads/2024/02/Copilot-Enterprise-Blog-Header.png?resize=1600%2C850" data-background-opacity="0.6">
             <h3>AI entered the chat</h3>
         </section>
+        <section>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                <h4>Pro's</h4>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li>Left Item 1</li>
+                    <li>Left Item 2</li>
+                    <li>Left Item 3</li>
+                </ul>
+                </div>
+                <div>
+                <h4>Cons</h4>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li>Right Item 1</li>
+                    <li>Right Item 2</li>
+                    <li>Right Item 3</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section data-auto-animate>
+            <h4 data-id="code-title">Pretty Code</h4>
+            <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+            import java.util.Collection;
+
+            public class CollectionCalculator {
+
+                public static void calculateSumAndAverage(Collection&lt;Integer&gt; numbers) {
+                    if (numbers == null || numbers.isEmpty()) {
+                        System.out.println("The collection is empty or null.");
+                        return;
+                    }
+
+                    int sum = 0;
+                    for (int number : numbers) {
+                        sum += number;
+                    }
+
+                    double average = sum / (double) numbers.size();
+
+                    System.out.println("Sum: " + sum);
+                    System.out.println("Average: " + average);
+                }
+            }
+
+                </code></pre>
+        </section>
+        <section data-auto-animate>
+            <h4 data-id="code-title">Pretty Code</h4>
+            <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+import java.util.Collection;
+import java.util.stream.Collectors;
+
+public class CollectionUtils {
+
+    public static double calculateSumAndAverage(Collection&lt;Integer&gt; numbers) {
+        if (numbers == null || numbers.isEmpty()) {
+            throw new IllegalArgumentException("The collection is empty or null.");
+        }
+
+        return numbers.stream()
+                .collect(Collectors.teeing(
+                        Collectors.summingDouble(i -> i),
+                        Collectors.counting(),
+                        (sum, count) -> sum / count
+                ));
+    }
+}
+
+                </code></pre>
+        </section>
+        <section>
+            <img src="">
+        </section>
+        <section>
+            <h3>Should we write code for AI?</h3>
+            <h3 class="fragment">Does AI care about clean code?</h3>
+            <h3 class="fragment">Is this the end of readable code?!</h3>
+        </section>
+        <section>
+            <h2>My Experience</h2>
+        </section>
+        <section>
+            <p>AI tools are great for quick cleanup</p>
+        </section>
     </div>
 </div>
 
